@@ -19,10 +19,10 @@ void setup() {
   // Set brake pins as outputs and connect to COM (ground)
 
   // Set remaining pins as inputs
-  pinMode(SW1_FR, INPUT);
-  pinMode(SW2_FR, INPUT);
-  pinMode(SW1_ENB, INPUT);
-  pinMode(SW2_ENB, INPUT);
+  pinMode(SW1_FR, OUTPUT);
+  pinMode(SW2_FR, OUTPUT);
+  pinMode(SW1_ENB, OUTPUT);
+  pinMode(SW2_ENB, OUTPUT);
   pinMode(MotionPin, INPUT);
 
   mySerial.begin(9600);  // Initialize serial communication
