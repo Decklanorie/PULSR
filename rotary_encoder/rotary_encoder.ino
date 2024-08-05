@@ -122,7 +122,7 @@ void updateEncoder() {
     SECOND_ENCODER_DEGREE = ((float)SECOND_ENCODER_POSITION - SECOND_ENCODER_DEGREE_CONSTANT) / PPR * 360.0;
 
 
-    //CLOCKWISE
+   
     if(FIRST_ENCODER_DEGREE >= FIRST_MAX_DEGREE){
       Serial.println("DIRECTION_TYPE:BACKWARD");
       delay(500);
@@ -132,7 +132,7 @@ void updateEncoder() {
     }
 
 
-    //ANTI-CLOCKWISE
+    
     if(SECOND_ENCODER_DEGREE >= SECOND_MAX_DEGREE){
       Serial.println("DIRECTION_TYPE:FORWARD");
       delay(500);
